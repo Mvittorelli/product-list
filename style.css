@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap");
+
+body {
+	font-family: "Red Hat Text", sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #fcf8f6;
+}
+
+h1 {
+	line-height: 48px;
+}
+
+.itemName {
+	font-size: var(--spacing-200, 16px);
+	font-weight: 600;
+}	
+
+.itemNameLittle {
+	color: var(--color-rose-500, #87635a);
+}
+
+.price {
+	color: var(--color-red, #c73b0f);
+}
+
+.yourCart {
+	background: var(--color-white, #fff);
+	border-radius: var(--spacing-150, 12px);
+	padding: var(--spacing-300, 24px);
+	gap: var(--spacing-300, 24px);
+	display: flex;
+	flex-direction: column;
+}
+
+.cartDesc {
+	color: var(--color-rose-500, #87635a);
+}
+
+h2 {
+	color: #c73b0f;
+}
+
+.cake {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-self: start;
+}
+
+@media screen and (min-width: 768px) {
+	.product {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		gap: 2%;
+	}
+	.cart {
+		width: 100%;
+		margin: 10% 0 10% 0;
+	}
+	.yourCart {
+		height: 40vh;
+	}
+	img[alt="Cake"] {
+		width: 20%;
+	}
+}
+
+@media screen and (min-width: 1300px) {
+h1{
+    /* border: red solid 1px; */
+    width: 50%;
+}
+	.flex {
+        display: flex;
+		flex-direction: row;
+        gap: 5%;
+	}
+
+	.cart {
+		width: 90%;
+		margin: 0;
+	}
+	.yourCart {
+		height: min-content;
+	}
+	img[alt="Cake"] {
+		width: 50%;
+	}
+}
